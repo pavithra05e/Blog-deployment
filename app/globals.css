@@ -1,42 +1,153 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* .admin-login-form{
+  background-color: grey;
+  color: black;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 70px;
+  height: 400px;
+  width: 500px;
+  margin-left: 600px;
+  margin-right: 700px;
+  margin-top: 150px;
+  text-align: center;
+}
+label{
+  font-size: 25px;
+  font-family: 'Times New Roman', Times, serif;
+  bottom: 10px;
+}
+input{
+  border-radius: 3px ;
+  border: 2px solid black;
+  padding: 10px;
+  height: 18px;
+  width: 300px;
+}
+button{
+  background-color: white;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 100px;
+} */
+
+
+.admin-login-form {
+  width: 450px;
+  margin: 40px auto;
+  padding: 30px;
+  height: 650px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background-color: #f9f9f9;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.admin-login-form form {
+  display: flex;
+  flex-direction: column;
 }
 
-html,
+.admin-login-form label {
+  margin-top: 12px;
+  font-weight: 600;
+  color: #333;
+}
+
+.admin-login-form input {
+  padding: 10px;
+  margin-top: 4px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.admin-login-form input:focus {
+  border-color: #4a90e2;
+  outline: none;
+  background-color: #fff;
+}
+
+.admin-login-form button {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #3067a5;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.admin-login-form button:hover {
+  background-color: #357abd;
+}
+
 body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-* {
-  box-sizing: border-box;
-  padding: 0;
   margin: 0;
+  padding: 0;
+  background: white;
+  color: black;
+  font-family: sans-serif;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 20px;
+  justify-content: center;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+.card {
+  background: white;
+  /* border: 1px solid black; */
+  border-radius: 10px;
+  padding: 16px;
+  width: 200px;
+  text-align: center;
+}
+
+.image {
+  width: 100%;
+  height: 250px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.detail-container {
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}
+
+.detail-image {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+header{
+  color: black;
+  background-color: #93c1d1;
+  padding: 20px;
+}
+
+.head{
+  display: flex;
+  justify-content: right;
+  gap: 30px;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  margin-right: 100px;
+}
+a{
+  color: black;
 }
